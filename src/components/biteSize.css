@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    border: solid white;
+    align-items: center;
+    width: 10em;
+    height: 12em;
+}
+
+input {
+    width: 10em;
+
+}
+#amount {
+    margin-bottom: 1em;
+}
+#divDone {
+    display: flex;
+    width: 10em;
+    text-align: end;
+    height: 3em;
+    padding-bottom: 1em;
+}
+
+#checkbox {
+    width: 1em;
+    height: 2em;
+    margin-bottom: 1em;
+}
+
+#labelSpent {
+    display: flex;
+    width: 8em;
+    justify-content: end;
+    padding-top: .2em;
+}
+
+
+p {
+    height: 6.6em;
+    font-size: larger;
+}
+
+#myButton {
+    font-size: .65em;
+    /* padding: 8px 12px; */
+    background-color: orange;
+}
