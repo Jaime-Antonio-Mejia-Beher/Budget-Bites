@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Envelope from './components/biteSize'
+import Header from './components/Header'
 
 function App() {
   const [count, setCount] = useState([1,2,3,4])
@@ -8,8 +9,20 @@ function App() {
 
   return (
     <>
-      <h1>Hello</h1>
+    <div>
+      <Header />
+    </div>
+    <div className='appContainer'>
       <Envelope />
+      <Envelope />
+      <Envelope />
+      <Envelope />
+      <Envelope />
+      <Envelope />
+      <Envelope />
+      <Envelope />
+      <Envelope />
+    </div>
     </>
   )
 }
