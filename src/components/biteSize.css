@@ -1,25 +1,30 @@
 .container {
     display: flex;
     flex-direction: column;
+    background-color: rgba(215, 196, 159, 0.6);
     border: solid white;
     align-items: center;
     width: 10em;
     height: 12em;
+    border-radius: 10%
 }
 
 input {
     width: 10em;
+    margin-top: 3;
 
 }
 #amount {
-    margin-bottom: 1em;
+    margin-bottom: em;
+    /* padding-bottom: ; */
+    font-size: 4em;
 }
 #divDone {
     display: flex;
     width: 10em;
     text-align: end;
-    height: 3em;
-    padding-bottom: 1em;
+    height: 2em;
+    /* padding-bottom: 1em; */
 }
 
 #checkbox {
@@ -43,6 +48,6 @@ p {
 
 #myButton {
     font-size: .65em;
-    /* padding: 8px 12px; */
-    background-color: rgba(215, 196, 159, 0.8)
+    margin: .5em;
+    background-color: rgba(80, 80, 80)
 }

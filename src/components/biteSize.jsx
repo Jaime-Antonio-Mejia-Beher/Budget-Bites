@@ -9,11 +9,11 @@ function Envelope() {
             </div>
           
             <div id='amount'>
-                <input type="text" placeholder='Enter $...'/>
-                <span>Dollar Amt</span>
+                <span>$10</span>
             </div>
 
-           <button id="myButton">Click me</button>
+            <input type="text" placeholder='Enter $...'/>
+            <button id="myButton">Click me</button>
 
         </div>
     )
