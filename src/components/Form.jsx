@@ -1,8 +1,7 @@
-/* eslint-disable react/prop-types */
-// import { useState } from "react";
-import "./Header.css";
+// eslint-disable react/prop-types
+import "./Form.css";
 
-const Header = ({
+const Form = ({
   amount,
   setAmount,
   envelope,
@@ -32,4 +31,4 @@ const Header = ({
   );
 };
 
-export default Header;
+export default Form;
