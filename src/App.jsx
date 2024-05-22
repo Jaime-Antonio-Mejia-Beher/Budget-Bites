@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Envelope from "./components/Envelope";
 import Form from "./components/Form";
+import ExchangeRates from "./components/ExchangeRates";
 
 function App() {
   const [amount, setAmount] = useState(0); // amount is budgeting amount
@@ -34,9 +35,7 @@ function App() {
           submitHandler={submitHandler}
         />
       </div>
-      {/* {users.map((u) => (
-        <p>{u}</p>
-      ))} */}
+      <ExchangeRates />
 {/* Displays array with length from 'envelope' and assigns each env with 'envelopeValue' */}
       <div className="appContainer">
         {envArray.map((env, i) => (
