@@ -3,6 +3,7 @@ import "./App.css";
 import Envelope from "./components/Envelope";
 import Form from "./components/Form";
 import ExchangeRates from "./components/ExchangeRates";
+import { AppContext } from "./AppContextProvider";
 
 function App() {
   const [amount, setAmount] = useState(0); // amount is budgeting amount
@@ -25,7 +26,7 @@ function App() {
   };
 
   return (
-    <>
+    <AppContext>
       <div>
         <Form
           amount={amount}
@@ -42,7 +43,7 @@ function App() {
           <Envelope key={i} value={envelopeValue} />
         ))}
       </div>
-    </>
+    </AppContext>
   );
 }
 
