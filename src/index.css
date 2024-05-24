@@ -15,7 +15,7 @@
 * {
   margin: 0;
   padding: 0px;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 a {
   font-weight: 500;
@@ -73,19 +73,19 @@ button:focus-visible {
   align-items: center;
   gap: 2em;
   margin-top: 5em;
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
 }
 .flex-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
-.ex-rate-conatiner {
+.ex-rate-container {
     /* display: flex; */
-    width: 12em;
+    /* width: 12em; */
     /* height: 100vh; */
-    border: 1px solid white;
-    margin-top: 10em;
-    margin-right: 2em;
+    /* border: 1px solid white; */
+    /* margin-top: 10em;
+    margin-right: 2em; */
 }

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Dropdown from "react-dropdown";
 import { HiSwitchHorizontal } from "react-icons/hi";
 import "react-dropdown/style.css";
-import './ExchangeRates.css'
+// import './ExchangeRates.css'
 
 const ExchangeRates = () => {
   const [rates, setRates] = useState({});
@@ -63,32 +63,18 @@ const ExchangeRates = () => {
     setOutput(result);
   }
 
-  // Function to switch between two currency
-  // function flip() {
-  //   var temp = from;
-  //   setFrom(to);
-  //   setTo(temp);
-  // }
 
   return (
-    <div className="ex-rate-conatiner">
+    <div className="ex-rate-container">
       <h2>Exchange Rates</h2>
-      {/* <ul>
-        {Object.keys(rates).map((currency) => (
-          <li key={currency}>
-            {currency}: {rates[currency]}
-          </li>
-        ))}
-      </ul> */}
       <div className="left">
-        {/* <h3>Amount</h3> */}
         <input
           type="text"
           placeholder="Enter amount"
           onChange={(e) => setInput(e.target.value)}
         />
       </div>
-      <div className="middle">
+      <div>
         <h3>From</h3>
         <Dropdown
           options={options}
@@ -99,7 +85,7 @@ const ExchangeRates = () => {
           placeholder="From"
         />
       </div>
-      <div className="right">
+      <div>
         <h3>To</h3>
         <Dropdown
           options={options}
@@ -110,14 +96,7 @@ const ExchangeRates = () => {
           placeholder="To"
         />
       </div>
-      <div className="result">
-        {/* <button
-          onClick={() => {
-            convert();
-          }}
-          >
-          Convert
-        </button> */}
+      <div>
         <h2>Converted Amount:</h2>
         <p>{input + " " + from + " = " + output.toFixed(2) + " " + to}</p>
         <p>
