@@ -23,6 +23,8 @@ You can view the live site [here](https://budget-bites.netlify.app/).
 
 This React app brings the traditional concept of envelope budgeting into the digital age. Inspired by the popular personal finance method of allocating funds into physical envelopes for different spending categories, this app provides a convenient and intuitive way to manage your finances digitally.
 
+Also included for your convenience is a currency exchange rate updated daily for traveling abroad.
+
 
 ## Prerequisites
 
