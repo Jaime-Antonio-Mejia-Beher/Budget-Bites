@@ -2,7 +2,7 @@ import Form from "./components/Form";
 import ExchangeRates from "./components/ExchangeRates";
 import AppContextProvider from "./AppContextProvider";
 import EnvelopesContainer from "./components/EnvelopesContainer";
-import Header from "./components/Header";
+// import Header from "./components/Header";
 
 function App() {
   return (
