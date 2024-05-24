@@ -1,64 +1,24 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(215, 196, 159, 0.6);
-    border: solid white;
-    align-items: center;
-    width: 10em;
-    height: 12em;
-    border-radius: 10%
+.envelope {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(215, 196, 159, 0.6);
+  border: solid white;
+  width: 10em;
+  border-radius: 20px;
+  padding: 10px;
+  gap: 10px;
+}
+.envelope p {
+  font-size: 50px;
+}
+.envelope button {
+    padding:5px 20px;
+    align-self: center;
 }
 
 input {
-    /* width: 10em;
-    margin-top: 3; */
-    width: 5em;
-    margin-top: 3;
-    /* padding: 1em; */
-    font-size: x-large;
-    border-radius: 10px;
-
-}
-#amount {
-    margin-bottom: em;
-    /* padding-bottom: ; */
-    font-size: 4em;
-}
-#divDone {
-    display: flex;
-    width: 10em;
-    text-align: end;
-    height: 2em;
-    /* padding-bottom: 1em; */
-}
-
-#checkbox {
-    width: 1em;
-    height: 2em;
-    margin-bottom: 1em;
-}
-
-#labelSpent {
-    display: flex;
-    width: 8em;
-    justify-content: end;
-    padding-top: .2em;
-}
-
-
-p {
-    height: 6.6em;
-    font-size: larger;
-}
-
-#myButton {
-    /* font-size: .65em;
-    margin: .5em;
-    background-color: rgba(80, 80, 80) */
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: .1em 1em;
-    font-size: 1.2em;
-    font-weight: 1000;
-    
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
 }

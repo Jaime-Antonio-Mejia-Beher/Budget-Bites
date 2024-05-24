@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Dropdown from "react-dropdown";
 import { HiSwitchHorizontal } from "react-icons/hi";
 import "react-dropdown/style.css";
+import './ExchangeRates.css'
 
 const ExchangeRates = () => {
   const [rates, setRates] = useState({});
@@ -70,7 +71,7 @@ const ExchangeRates = () => {
   // }
 
   return (
-    <div>
+    <div className="ex-rate-conatiner">
       <h2>Exchange Rates</h2>
       {/* <ul>
         {Object.keys(rates).map((currency) => (
@@ -80,10 +81,10 @@ const ExchangeRates = () => {
         ))}
       </ul> */}
       <div className="left">
-        <h3>Amount</h3>
+        {/* <h3>Amount</h3> */}
         <input
           type="text"
-          placeholder="Enter the amount"
+          placeholder="Enter amount"
           onChange={(e) => setInput(e.target.value)}
         />
       </div>
@@ -109,22 +110,22 @@ const ExchangeRates = () => {
           placeholder="To"
         />
       </div>
-      <p>
-        Rates by{" "}
-        <a href="https://www.exchangerate-api.com">
-          Rates By Exchange Rate API
-        </a>
-      </p>
       <div className="result">
-        <button
+        {/* <button
           onClick={() => {
             convert();
           }}
-        >
+          >
           Convert
-        </button>
+        </button> */}
         <h2>Converted Amount:</h2>
         <p>{input + " " + from + " = " + output.toFixed(2) + " " + to}</p>
+        <p>
+          Rates by{" "}
+          <a href="https://www.exchangerate-api.com">
+            Rates By Exchange Rate API
+          </a>
+        </p>
       </div>
     </div>
   );
