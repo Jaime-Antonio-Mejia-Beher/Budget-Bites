@@ -1,19 +1,14 @@
 .startingBudget {
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    justify-content: space-between;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* width: auto; */
+    /* justify-content: space-between; */
+    border: 4px solid orange;
+    margin-top: 2em;
 }
 
 button {
     background-color: rgba(80, 80, 80);
-    
-}
-
-.moreOrLess {
-    display: flex;
-    align-items: start;
-    width: 10em;
-    height: 2em;
-    justify-content: space-evenly;
+    width: 45%;
+    margin: 10px 0px;
 }

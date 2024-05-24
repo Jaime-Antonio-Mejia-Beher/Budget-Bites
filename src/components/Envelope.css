@@ -1,24 +1,40 @@
 .envelope {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   background-color: rgba(215, 196, 159, 0.6);
   border: solid white;
-  width: 10em;
+  width: 15em;
+  height: 12em;
   border-radius: 20px;
-  padding: 10px;
-  gap: 10px;
+  /* padding: 10px; */
+  /* gap: 10px; */
 }
 .envelope p {
   font-size: 50px;
 }
 .envelope button {
-    padding:5px 20px;
+    padding:5px 15px;
     align-self: center;
+}
+.envelope span {
+  display: flex;
+  font-size: 1.5em;
+  margin-right: 40px;
+  margin-top: 10px;
+  color: black;
+  font-weight: bold;
+}
+.env-tracker{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-right: 4.2em;
 }
 
 input {
   padding: 10px;
   border-radius: 10px;
-  width: 100%;
+  width: 66%;
+  margin-bottom: .5em;
 }
+

@@ -27,6 +27,29 @@ const AppContextProvider = ({ children }) => {
     setEnvArray(arr);
   };
 
+  const evaluate = (i, amountSpent) => {
+    let arr = [...envArray];
+    /*for (let i = 0; i < arr.length; i++) {
+      let card = arr[i];
+      spent = card - amountSpent
+      
+    }*/
+
+    arr[i] = arr[i] - amountSpent; // 20 - 25
+    // console.log(arr[i]) // -5
+    let amount = arr[i]; // -5 = -5
+    if (amount < 0) { // if -5 < 0
+      arr[i] = 0;  // set to zero
+      // console.log(amount) // logs -5
+      let newAmount = amount - arr[1]
+      console.log(newAmount) // logs 0
+      // loop through and subtract from second
+      // card upward
+    }
+
+    setEnvArray(arr);
+  };
+
   return (
     <AppContext.Provider
       value={{
@@ -36,6 +59,7 @@ const AppContextProvider = ({ children }) => {
         setEnvelope,
         setAmount,
         submitHandler,
+        evaluate,
       }}
     >
       {children}

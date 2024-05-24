@@ -9,26 +9,33 @@ const Form = () => {
 
   return (
     <>
-      <h1>Set Budget</h1>
       <div className="startingBudget">
         <div>
+          <h1>Set Budget</h1>
+          <br />
           <label>Budget Amount</label>
+          <br />
           <input
             type="number"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
           />
-        </div>
-        <div>
+          <br />
+          <br />
+          {/* </div>
+        <div> */}
           <label>Number of Envelopes</label>
+          <br />
           <input
             type="number"
             value={envelope}
             onChange={(e) => setEnvelope(e.target.value)}
           />
+          {/* </div>
+        <div> */}
+          <button onClick={submitHandler}>Submit</button>
         </div>
       </div>
-      <button onClick={submitHandler}>Submit</button>
     </>
   );
 };

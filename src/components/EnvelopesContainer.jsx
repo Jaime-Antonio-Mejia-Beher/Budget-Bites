@@ -8,7 +8,7 @@ const EnvelopesContainer = () => {
   return (
     <div className="appContainer">
       {envArray.map((env, i) => (
-        <Envelope key={i} value={env} />
+        <Envelope key={i} index={i} value={env} />
       ))}
     </div>
   );
