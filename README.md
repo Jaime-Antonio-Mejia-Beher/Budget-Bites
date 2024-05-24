@@ -21,17 +21,24 @@ You can view the live site [here](https://budget-bites.netlify.app/).
 
 ## Description
 
-A brief description of your project. Explain what the project does, its purpose, and any relevant details that potential users or contributors might need to know.
+This React app brings the traditional concept of envelope budgeting into the digital age. Inspired by the popular personal finance method of allocating funds into physical envelopes for different spending categories, this app provides a convenient and intuitive way to manage your finances digitally.
 
 
-## Getting Started
+## Prerequisites
 
-### Prerequisites
+To develop and run this project, you'll need the following software and tools installed on your machine:
 
-List the software and tools needed to develop and run your project. For example:
+- **Node.js**: The JavaScript runtime environment used for running the development server and managing project dependencies. You can download and install Node.js from [nodejs.org](https://nodejs.org/).
 
-- Node.js
-- npm or yarn
+- **npm (Node Package Manager)**: npm is the default package manager for Node.js and is used to install project dependencies. It's included with Node.js installation.
+
+## Installing Dependencies
+
+Before running the project, make sure to install the necessary dependencies by running the following command in the project directory:
+
+```bash
+npm install
+
 
 ### Installation
 
