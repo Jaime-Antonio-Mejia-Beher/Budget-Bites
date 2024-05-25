@@ -3,15 +3,15 @@ import { useContext, useState } from "react";
 import "./Envelope.css";
 import { AppContext } from "../AppContextProvider";
 
-const Envelope = ({ index, value }) => {
+const Envelope = ({ index, value, className }) => {
   const [spent, setSpent] = useState(0);
   const { evaluate } = useContext(AppContext);
 
   return (
-    <div className="envelope">
+    <div className={`envelope ${className}`}>
       <div className="env-tracker">
-        <span>#{index+1}</span>
-        <p>${value}</p>
+        {index >= 0 && <span>#{index + 1}</span>}
+        {value >= 0 ? <p>${value}</p> : <p>-${Math.abs(value)}</p>}
       </div>
       {index <= 0 && (
         <>

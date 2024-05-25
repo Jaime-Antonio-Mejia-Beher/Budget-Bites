@@ -8,8 +8,10 @@ const AppContextProvider = ({ children }) => {
   const [amount, setAmount] = useState(0); // amount is budgeting amount
   const [envelope, setEnvelope] = useState(0); // num of envelopes desired from user
   const [envArray, setEnvArray] = useState([]); // stores array generated from amount, envelope, envelopeValue
+  const [overage, setOverage] = useState(0);
 
   const submitHandler = () => {
+    setOverage(0);
     if (amount <= 0 || envelope <= 0) {
       alert("Input a number greater than zero");
       return;
@@ -29,25 +31,30 @@ const AppContextProvider = ({ children }) => {
 
   const evaluate = (i, amountSpent) => {
     let arr = [...envArray];
-    /*for (let i = 0; i < arr.length; i++) {
-      let card = arr[i];
-      spent = card - amountSpent
-      
-    }*/
 
-    arr[i] = arr[i] - amountSpent; // 20 - 25
-    // console.log(arr[i]) // -5
-    let amount = arr[i]; // -5 = -5
-    if (amount < 0) { // if -5 < 0
-      arr[i] = 0;  // set to zero
-      // console.log(amount) // logs -5
-      let newAmount = amount - arr[1]
-      console.log(newAmount) // logs 0
-      // loop through and subtract from second
-      // card upward
+    let value = arr[i] - amountSpent; // 27 - 70
+    if (value < 0) {
+      arr[i] = 0;
+
+      for (let j = 1; j < arr.length; j++) {
+        value = arr[j] + value;
+        if (value < 0) {
+          arr[j] = 0;
+        } else {
+          arr[j] = value;
+          value = 0;
+        }
+      }
+    } else {
+      arr[i] = value;
     }
 
-    setEnvArray(arr);
+    setOverage(value);
+
+    // remove cards with 0 values
+    let newArr = arr.filter((el) => el > 0);
+
+    setEnvArray(newArr);
   };
 
   return (
@@ -60,6 +67,7 @@ const AppContextProvider = ({ children }) => {
         setAmount,
         submitHandler,
         evaluate,
+        overage,
       }}
     >
       {children}
