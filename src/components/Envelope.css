@@ -1,7 +1,7 @@
 .envelope {
   display: flex;
   flex-direction: column;
-  background-color: rgba(215, 196, 159, 0.6);
+  background-color: rgba(234, 200, 133, 0.767);
   border: solid white;
   width: 15em;
   height: 15em;
@@ -10,11 +10,14 @@
 }
 .redEnv {
   background-color: rgba(205, 82, 82, 0.872);
-  padding-left: 50px;
+  padding-bottom: 25px;
+  padding-right: 12px;
   justify-content: center;
 }
 .envelope p {
-  font-size: 3.5em;
+  font-size: 4em;
+  font-weight: 500;
+
 }
 .envelope button {
   padding: 5px 15px;
@@ -22,8 +25,8 @@
 }
 .envelope span {
   display: flex;
-  font-size: 1.5em;
-  color: rgb(166, 216, 0);
+  font-size: 1.66em;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   align-self: flex-start;
   position: absolute;

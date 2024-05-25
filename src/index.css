@@ -110,13 +110,16 @@ input {
   border-radius: 10px;
   width: 66%;
   margin-bottom: 0.5em;
+  font-size: large;
 }
-
+label {
+  font-size: large;
+}
 .envelope input {
   padding: 10px;
   border-radius: 10px;
   width: 66%;
-  margin-bottom: 0.5em;
+  margin-bottom: 0
 }
 
 @media (576 <= width < 768) {
