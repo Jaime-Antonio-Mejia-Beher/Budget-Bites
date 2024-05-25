@@ -4,18 +4,17 @@
   background-color: rgba(215, 196, 159, 0.6);
   border: solid white;
   width: 15em;
-  height: 12em;
+  height: 15em;
   border-radius: 20px;
-  /* padding: 10px; */
-  /* gap: 10px; */
+  position: relative;
 }
 .redEnv {
   background-color: rgba(205, 82, 82, 0.872);
- padding-left: 50px;
+  padding-left: 50px;
   justify-content: center;
 }
 .envelope p {
-  font-size: 50px;
+  font-size: 3.5em;
 }
 .envelope button {
   padding: 5px 15px;
@@ -24,21 +23,18 @@
 .envelope span {
   display: flex;
   font-size: 1.5em;
-  margin-right: 40px;
-  margin-top: 10px;
-  color: black;
+  color: rgb(166, 216, 0);
   font-weight: bold;
+  align-self: flex-start;
+  position: absolute;
+  left: 0;
+  margin-left: 10px;
 }
 .env-tracker {
   display: flex;
   justify-content: center;
-  text-align: center;
-  margin-right: 4.2em;
+  height: inherit;
+  align-items: center;
 }
 
-input {
-  padding: 10px;
-  border-radius: 10px;
-  width: 66%;
-  margin-bottom: 0.5em;
-}
+

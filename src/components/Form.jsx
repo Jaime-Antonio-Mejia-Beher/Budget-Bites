@@ -1,6 +1,5 @@
 // eslint-disable react/prop-types
 import { useContext } from "react";
-import "./Form.css";
 import { AppContext } from "../AppContextProvider";
 
 const Form = () => {

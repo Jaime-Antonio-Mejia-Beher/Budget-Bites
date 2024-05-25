@@ -82,11 +82,43 @@ button:focus-visible {
   margin-bottom: 3em;
   /* border: 1px solid red; */
 }
-.ex-rate-container {
+/* .ex-rate-container { */
     /* display: flex; */
     /* width: 12em; */
     /* height: 100vh; */
     /* border: 1px solid white; */
     /* margin-top: 10em;
     margin-right: 2em; */
+/* } */
+
+
+/* Form CSS */
+.startingBudget {
+    border: 3px solid white;
+    margin-top: 2em;
+    padding: 1em;
+}
+
+button {
+    background-color: rgba(80, 80, 80);
+    width: 45%;
+    margin: 10px 0px;
+}
+/* End of Form CSS */
+input {
+  padding: 10px;
+  border-radius: 10px;
+  width: 66%;
+  margin-bottom: 0.5em;
+}
+
+.envelope input {
+  padding: 10px;
+  border-radius: 10px;
+  width: 66%;
+  margin-bottom: 0.5em;
+}
+
+@media (576 <= width < 768) {
+  display: flex;
 }
