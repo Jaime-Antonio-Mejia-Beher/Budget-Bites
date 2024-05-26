@@ -1,8 +1,10 @@
 .envelope {
   display: flex;
   flex-direction: column;
-  background-color: rgba(234, 200, 133, 0.767);
-  border: solid white;
+  background-color: rgba(214, 228, 214, 0.589);
+  /* background-color: rgb(215, 232, 211); */
+  background-color: #92abb2;
+  border: solid rgb(0, 0, 0);
   width: 15em;
   height: 15em;
   border-radius: 20px;
@@ -17,11 +19,13 @@
 .envelope p {
   font-size: 4em;
   font-weight: 500;
+  color: rgba(195, 0, 143, 0.655);
 
 }
 .envelope button {
   padding: 5px 15px;
   align-self: center;
+  background-color: rgb(227, 224, 199);
 }
 .envelope span {
   display: flex;

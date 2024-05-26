@@ -10,10 +10,12 @@ const EnvelopesContainer = () => {
   return (
     <div className="appContainer">
       {overage < 0 && <Envelope className={"redEnv"} value={overage} />}
+      {/* if value is > 0 return this envelope */}
       {envArray.map((value, i) => ( 
         <Envelope key={i} index={i} value={value} />
       ))}
     </div>
   );
 };
+
 export default EnvelopesContainer;
