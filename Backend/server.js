@@ -15,8 +15,10 @@ app.get("/", (req, res) => {
 app.get('/api/envelopes', async(req, res) => {
     try {
         const envelopes = await Envelopes.find({})
+        res.status(200).json(envelopes)
     } catch(error) {
-
+        console.log(err.message)
+        res.status(400).json(error)
     }
 })
 
